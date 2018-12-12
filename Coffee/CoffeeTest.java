@@ -4,9 +4,8 @@ import java.io.PrintStream;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.containsString;
 
@@ -35,13 +34,6 @@ public class CoffeeTest {
     Coffee.main(args);
     assertThat("Does your coffee print out sugar?.", outContent.toString(), containsString(expected));
   }
-
-  @Test
-  public void err() {
-    System.err.print("hello again");
-    assertEquals("hello again", errContent.toString());
-  }
-
 
   @Test
   public void isInstanceOfBeverage() {

@@ -6,6 +6,6 @@ public class CalculatorTest {
   public void evaluatesExpression() {
     Calculator calculator = new Calculator();
     int sum = calculator.evaluate("1+2+3");
-    assertEquals(6, sum);
+    assertEquals("Caclculator.sum() should take a sum string and return the sum!", 6, sum);
   }
 }
